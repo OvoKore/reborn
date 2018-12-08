@@ -33,11 +33,11 @@ my $hooks = Plugins::addHooks(
 	['job_level_changed',		\&jobUp, undef],
 	['packet_storage_close',	\&storageClose, undef],
 	['packet/actor_info',		\&core_actorInfo, undef],
-	['engaged_deal',			\&trade_start, undef],
-	['finalized_deal',			\&trade_finalize, undef],
-	['complete_deal',			\&trade_complete, undef],
-	['npc_exist',				\&npc_found, undef],
-	['zeny_change',				\&zeny_changed, undef],
+	['engaged_deal',		\&trade_start, undef],
+	['finalized_deal',		\&trade_finalize, undef],
+	['complete_deal',		\&trade_complete, undef],
+	['npc_exist',			\&npc_found, undef],
+	['zeny_change',			\&zeny_changed, undef],
 	['packet/map_change', 		\&maze, undef],
 	['packet/map_loaded', 		\&valk, undef]
 	
