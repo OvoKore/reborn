@@ -28,7 +28,7 @@ use Log qw(error);
 Plugins::register("reborn", "reborn now!", \&unload);
 
 my $hooks = Plugins::addHooks(
-	['packet/quest_all_mission',\&check, undef],
+	['packet/quest_all_mission',	\&check, undef],
 	['base_level_changed',		\&levelUp, undef],
 	['job_level_changed',		\&jobUp, undef],
 	['packet_storage_close',	\&storageClose, undef],
